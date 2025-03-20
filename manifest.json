@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Cheko 侧边内容查看器",
+    "version": "1.0",
+    "description": "左侧展示指定区域内容",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.cheko.cc/test/select_test_playground*"],
+            "js": ["cheko-sidebar.js"]
+        }
+    ]
+}
